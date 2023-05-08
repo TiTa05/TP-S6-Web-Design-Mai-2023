@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Users;
 use App\article;
+use Illuminate\Support\Facades\Cache;
+
 class UserController extends Controller
 {
 
@@ -42,6 +44,23 @@ class UserController extends Controller
         article::create($data);
         return redirect("/liste");     
      }
+     //Avec cache
+    //  public function ArticleComplet(){
+
+    //     $url = request('id');
+    //     $tab = array();
+    //     $tab = explode("-", $url);
+    //     $firstDigit = $tab[0];
+    //     $article = Cache::remember('Article_'.$firstDigit, 60, function () use ($firstDigit){
+    //         return Article::find( $firstDigit);
+    //     });
+    //     $response = response()->view('user/ArticleComplet', [
+    //         'article'=>$article,
+    //     ]);
+    //     $response->header('Cache-Control','max-age=3600, public');
+    //     return $response;
+    //  }
+     //Sans cache
 
      public function ArticleComplet(){
 
@@ -55,4 +74,5 @@ class UserController extends Controller
         ]);
      }
 
+     
 }
