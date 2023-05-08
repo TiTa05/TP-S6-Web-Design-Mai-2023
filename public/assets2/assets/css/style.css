@@ -1,0 +1,331 @@
+ body {
+   font-family: "Poppins", sans-serif;
+   color: #0c0c0c;
+   background-color: #ffffff;
+ }
+
+
+ /*header section*/
+ .hero_area {
+   background: -webkit-gradient(linear, left top, right top, from(#864ddf), to(#203376));
+   background: linear-gradient(to right, #864ddf, #203376);
+ }
+
+ .sub_page .hero_area {
+   height: auto;
+ }
+
+ .sub_page .hero_area::before {
+   display: none;
+ }
+
+ .hero_area.sub_pages {
+   height: auto;
+ }
+
+ .header_section {
+   padding-top: 15px;
+ }
+
+ .header_section .container-fluid {
+   padding-right: 25px;
+   padding-left: 25px;
+ }
+
+ .header_section .nav_container {
+   margin: 0 auto;
+ }
+
+ .custom_nav-container.navbar-expand-lg .navbar-nav .nav-link {
+   padding: 10px 30px;
+   color: #f9fcfb;
+   text-align: center;
+   text-transform: uppercase;
+ }
+
+ a,
+ a:hover,
+ a:focus {
+   text-decoration: none;
+ }
+
+ a:hover,
+ a:focus {
+   color: initial;
+ }
+
+ .btn,
+ .btn:focus {
+   outline: none !important;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+ }
+
+ .navbar-brand,
+ .navbar-brand:hover {
+   text-transform: uppercase;
+   font-weight: bold;
+   font-size: 24px;
+   color: #fafcfd;
+ }
+
+ .custom_nav-container .nav_search-btn {
+   background-image: url(../images/search-icon.png);
+   background-size: 22px;
+   background-repeat: no-repeat;
+   background-position-y: 7px;
+   width: 35px;
+   height: 35px;
+   padding: 0;
+   border: none;
+ }
+
+ .navbar-brand {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   align-items: center;
+ }
+
+ .navbar-brand span {
+   font-size: 20px;
+   font-weight: 700;
+   color: #f9fcfb;
+   margin-top: 5px;
+   text-transform: uppercase;
+ }
+
+ .custom_nav-container {
+   z-index: 99999;
+   padding: 5px 0;
+ }
+
+ .custom_nav-container .navbar-toggler {
+   outline: none;
+ }
+
+ .custom_nav-container .navbar-toggler .navbar-toggler-icon {
+   background-image: url(../images/menu.png);
+   background-size: 40px;
+ }
+
+ /*end header section*/
+ /* Slider */
+ * {
+   box-sizing: border-box
+ }
+
+ .mySlides {
+   display: none;
+ }
+
+ img {
+   vertical-align: middle;
+ }
+
+ /* Slideshow container */
+ .slideshow-container {
+   width: 100%;
+   position: relative;
+   margin: auto;
+ }
+
+ /* Next & previous buttons */
+ .prev,
+ .next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   padding: 16px;
+   margin-top: -22px;
+   color: white;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+ }
+
+ /* Position the "next button" to the right */
+ .next {
+   right: 0;
+   border-radius: 3px 0 0 3px;
+ }
+
+ /* On hover, add a black background color with a little bit see-through */
+ .prev:hover,
+ .next:hover {
+   background-color: rgba(0, 0, 0, 0.8);
+ }
+
+ /* Caption text */
+ .text {
+   color: #f2f2f2;
+   font-size: 15px;
+   padding: 8px 12px;
+   position: absolute;
+   bottom: 8px;
+   width: 100%;
+   text-align: center;
+ }
+
+ /* Number text (1/3 etc) */
+ .numbertext {
+   color: #f2f2f2;
+   font-size: 12px;
+   padding: 8px 12px;
+   position: absolute;
+   top: 0;
+ }
+
+ /* The dots/bullets/indicators */
+ .dot {
+   cursor: pointer;
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color: #bbb;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+ }
+
+ .active,
+ .dot:hover {
+   background-color: #717171;
+ }
+
+ /* Fading animation */
+ .fades {
+   animation-name: fade;
+   animation-duration: 1.5s;
+
+   width: 100%;
+   height: 400px;
+   overflow: hidden;
+ }
+ .fades:not(.show) {
+  opacity: 1;
+}
+
+ @keyframes fade {
+   from {
+     opacity: .4
+   }
+
+   to {
+     opacity: 1
+   }
+ }
+
+ /* On smaller screens, decrease text size */
+ @media only screen and (max-width: 300px) {
+
+   .prev,
+   .next,
+   .text {
+     font-size: 11px
+   }
+ }
+/* text actualité */
+.container {
+  position: relative;
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+
+.container .contenu {
+  position: absolute; /* Position the background text */
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 97.5%; /* Full width */
+  padding: 20px; /* Some padding */
+}
+ /*# sourceMappingURL=style.css.map */
+ /* pour la liste */
+ * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+    font-family: Arial;
+  }
+  
+  /* Center website */
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+    width:50%;
+
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    display: none; /* Hide all elements by default */
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+  .image-frame{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  .content p,h4 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .main {
+    margin-left:50px ;
+  }
+  .input-article {
+    margin-left:50px ;
+  }
